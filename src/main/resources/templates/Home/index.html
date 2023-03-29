@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="MyCss.css">
+</head>
+<body>
+<h1>Person List</h1>
+<a href="/create">
+    <button class="btn-create, btn" id="btn-create">Create Person</button>
+</a>
+
+<table>
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>First name</th>
+        <th>Laste name</th>
+
+
+    </tr>
+    </thead>
+    <tbode>
+        <tr th:each="person: ${persons}">
+            <td th:text="${person.id}"></td>
+            <td th:text="${person.first_name}"></td>
+            <td th:text="${person.last_name}"></td>
+            <td><button class="btn" id="btn-delete">delete</button></td>
+            <td><button class="btn" id="btn-update">update</button></td>
+            <td><button class="btn" id="btn-find">find</button></td>
+
+        </tr>
+    </tbode>
+</table>
+</body>
+</html>

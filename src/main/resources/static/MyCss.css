@@ -1,0 +1,39 @@
+table{
+    border-collapse: collapse;
+    width: 40%;
+}
+
+th{
+    background-color: lightcoral;
+    border: 2px solid black;
+    border-radius: 30%;
+}
+
+td, th{
+    border: 3px solid purple;
+    text-align: left;
+    padding: 4px;
+    border-radius: 15%;
+}
+tr:nth-child(even){
+    background-color: lightsalmon;
+
+}
+
+.btn{
+    background-color: lightgreen;
+    border: none;
+    color: green;
+    padding: 7px 14px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+.btn:hover{
+    box-shadow: 2px 2px 2px wheat;
+}
+
+#btn-create{
+
+}
